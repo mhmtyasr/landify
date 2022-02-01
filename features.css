@@ -1,0 +1,71 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+@media screen and (max-width: 480px) {
+  .features {
+    margin: 0 20px;
+  }
+}
+.features > .sectionHeading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 800px;
+}
+@media screen and (max-width: 768px) {
+  .features > .sectionHeading {
+    width: 100%;
+  }
+}
+.features > .sectionHeading > h1 {
+  margin: 0px;
+}
+.features > .sectionHeading > p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 8px 0 0 0;
+}
+.features > .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1212px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .features > .container {
+    width: 100%;
+  }
+}
+.features > .container > .featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 384px;
+  height: 152px;
+  margin-top: 64px;
+  max-width: 384px;
+  height: 152px;
+  margin-top: 64px;
+  flex: 1 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .features > .container > .featureItem {
+    margin-top: 48px;
+    width: 100%;
+  }
+}
+.features > .container > .featureItem > h2 {
+  margin: 24px 0 0 0px;
+}
+.features > .container > .featureItem > p {
+  margin: 8px 0 0 0px;
+}
+.features > .container > .featureItem:nth-child(3n+0) {
+  margin-right: 0px;
+}/*# sourceMappingURL=features.css.map */

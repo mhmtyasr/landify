@@ -1,0 +1,72 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: transparent;
+  > .leftNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > .logo {
+      margin-left: 113.14px;
+      margin-right: 48.14px;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 40px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-left: 20px;
+      }
+    }
+    > ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      > li {
+        margin-right: 24px;
+      }
+    }
+  }
+  > .appBadges {
+    display: flex;
+    > .storeBadge {
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      > .ıosStore {
+        margin-right: 112px;
+        @media screen and (max-width: 768px) {
+          margin-right: 16px;
+        }
+      }
+
+      > img {
+        width: 135px;
+        margin-right: 12.87px;
+      }
+    }
+
+    > .hamburgerMenu {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        margin-right: 40px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

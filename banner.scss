@@ -1,0 +1,213 @@
+.banner {
+    padding: 92px 196px 92px 112px;
+    background-image: url("./img/BG.png");
+    height: 786px;
+    margin-top: -80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 40px;
+        flex-direction: column;
+        background-image: url("./img/BGTablet.png");
+        height: auto;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 0 20px;
+    }
+
+    > div {
+        > .title {
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: -0.025em;
+            text-align: left;
+            margin: 156px 140px 0 0;
+
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
+                font-size: 48px;
+                line-height: 60px;
+            }
+            @media screen and (max-width: 480px) {
+                margin-right: 0;
+                font-size: 36px;
+                line-height: 45x;
+            }
+        }
+
+        > .description {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            margin-right: 180px;
+            margin-top: 8px;
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
+                margin-top: 16px;
+            }
+        }
+
+        > .buttonContainer {
+            display: flex;
+            margin-top: 32px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 80px;
+            }
+            > button {
+                &:first-child {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 138px;
+                    height: 56px;
+
+                    background: #7c3aed;
+                    border-radius: 8px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                }
+
+                &:last-child {
+                    margin-left: 42px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: transparent;
+                    height: 56px;
+                    border: none;
+                    outline: none;
+                    color: #7c3aed;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    > img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        &:last-of-type {
+            @media screen and (max-width: 768px) {
+                display: flex;
+                justify-content: center;
+
+                > img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .rightBandTop {
+        background-image: url("./img/Band.svg");
+        width: 612px;
+        height: 140px;
+        position: absolute;
+        right: 0;
+        top: 512px;
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            top: 685px;
+            width: 533px;
+            height: 140px;
+        }
+
+
+
+        @media screen and (max-width: 480px) {
+            width: 200px;
+            height: 140px;
+            top: 642px;
+           
+        }
+    }
+
+    .rightBandMid {
+        background-image: url("./img/BandGreen.svg");
+        width: 180px;
+        height: 140px;
+        position: absolute;
+        right: 0;
+        top: 545px;
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            top: 719px;
+            width: 107px;
+            height: 118px;
+        }
+
+         @media screen and (max-width: 480px) {
+           top: 718px;
+        }
+        
+    }
+    .rightBandBottom {
+        background-image: url("./img/BandPurple.svg");
+        width: 318px;
+        height: 116px;
+        position: absolute;
+        right: 32px;
+        top: 438px;
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            top: 622px;
+            right: 17px;
+        }
+
+        @media screen and (max-width: 480px) {
+         right: 7px;
+         top: 618px;
+        }
+    }
+
+    .leftBandTop {
+        background-image: url("./img/BandLeftGreen.svg");
+        width: 420px;
+        height: 117px;
+        position: absolute;
+        left: 0;
+        top: 635px;
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            top: 807px;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 205px;
+        }
+    }
+
+    .leftBandBottom {
+        background-image: url("./img/BandPurple.svg");
+        width: 205px;
+        height: 117px;
+        position: absolute;
+        left: 0;
+        top: 699px;
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            top: 871px;
+        }
+    }
+}

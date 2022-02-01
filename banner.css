@@ -1,0 +1,211 @@
+.banner {
+  padding: 92px 196px 92px 112px;
+  background-image: url("./img/BG.png");
+  height: 786px;
+  margin-top: -80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 0 40px;
+    flex-direction: column;
+    background-image: url("./img/BGTablet.png");
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner {
+    padding: 0 20px;
+  }
+}
+.banner > div > .title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.025em;
+  text-align: left;
+  margin: 156px 140px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .banner > div > .title {
+    margin-right: 0;
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner > div > .title {
+    margin-right: 0;
+    font-size: 36px;
+    line-height: 45x;
+  }
+}
+.banner > div > .description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  margin-right: 180px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .banner > div > .description {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+}
+.banner > div > .buttonContainer {
+  display: flex;
+  margin-top: 32px;
+}
+@media screen and (max-width: 768px) {
+  .banner > div > .buttonContainer {
+    margin-bottom: 80px;
+  }
+}
+.banner > div > .buttonContainer > button:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 56px;
+  background: #7c3aed;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.banner > div > .buttonContainer > button:last-child {
+  margin-left: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 56px;
+  border: none;
+  outline: none;
+  color: #7c3aed;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.banner > div > .buttonContainer > button:last-child > img {
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .banner > div:last-of-type {
+    display: flex;
+    justify-content: center;
+  }
+  .banner > div:last-of-type > img {
+    width: 100%;
+  }
+}
+.banner .rightBandTop {
+  background-image: url("./img/Band.svg");
+  width: 612px;
+  height: 140px;
+  position: absolute;
+  right: 0;
+  top: 512px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .banner .rightBandTop {
+    top: 685px;
+    width: 533px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner .rightBandTop {
+    width: 200px;
+    height: 140px;
+    top: 642px;
+  }
+}
+.banner .rightBandMid {
+  background-image: url("./img/BandGreen.svg");
+  width: 180px;
+  height: 140px;
+  position: absolute;
+  right: 0;
+  top: 545px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .banner .rightBandMid {
+    top: 719px;
+    width: 107px;
+    height: 118px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner .rightBandMid {
+    top: 718px;
+  }
+}
+.banner .rightBandBottom {
+  background-image: url("./img/BandPurple.svg");
+  width: 318px;
+  height: 116px;
+  position: absolute;
+  right: 32px;
+  top: 438px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .banner .rightBandBottom {
+    top: 622px;
+    right: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner .rightBandBottom {
+    right: 7px;
+    top: 618px;
+  }
+}
+.banner .leftBandTop {
+  background-image: url("./img/BandLeftGreen.svg");
+  width: 420px;
+  height: 117px;
+  position: absolute;
+  left: 0;
+  top: 635px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .banner .leftBandTop {
+    top: 807px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner .leftBandTop {
+    width: 205px;
+  }
+}
+.banner .leftBandBottom {
+  background-image: url("./img/BandPurple.svg");
+  width: 205px;
+  height: 117px;
+  position: absolute;
+  left: 0;
+  top: 699px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .banner .leftBandBottom {
+    top: 871px;
+  }
+}/*# sourceMappingURL=banner.css.map */
